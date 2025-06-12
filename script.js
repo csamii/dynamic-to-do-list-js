@@ -27,3 +27,8 @@ function addTask (){
 }
 
 addButton.addEventListener("click", addTask);
+taskInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    addTask();
+  }
+})
